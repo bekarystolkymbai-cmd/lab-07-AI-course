@@ -26,7 +26,7 @@
       "regret_mean": 0.0,
       "env_steps": 33000,
       "backups": 0,
-      "seconds_per_run": 0.6724909965999984
+      "seconds_per_run": 0.7049338819999775
     },
     {
       "route": "value iteration",
@@ -38,7 +38,7 @@
       "regret_mean": 0.0,
       "env_steps": 0,
       "backups": 25476,
-      "seconds_per_run": 0.015213198000026296
+      "seconds_per_run": 0.015855018000138443
     },
     {
       "route": "Q-learning",
@@ -50,7 +50,7 @@
       "regret_mean": 39.20437617916832,
       "env_steps": 100000,
       "backups": 100000,
-      "seconds_per_run": 4.151775196799997
+      "seconds_per_run": 4.197553384399976
     }
   ],
   "fixed_cost": 100,
@@ -65,7 +65,7 @@
       "regret_mean": 352.0575550141011,
       "env_steps": 33000,
       "backups": 0,
-      "seconds_per_run": 0.7210381345999849
+      "seconds_per_run": 0.5635065527000052
     },
     {
       "route": "value iteration",
@@ -77,7 +77,7 @@
       "regret_mean": 0.0,
       "env_steps": 0,
       "backups": 25146,
-      "seconds_per_run": 0.013049609999939094
+      "seconds_per_run": 0.01837333799994667
     },
     {
       "route": "Q-learning",
@@ -89,7 +89,7 @@
       "regret_mean": 81.75721176125535,
       "env_steps": 100000,
       "backups": 100000,
-      "seconds_per_run": 4.124672906900026
+      "seconds_per_run": 4.1315617022000195
     }
   ],
   "budgets": [
