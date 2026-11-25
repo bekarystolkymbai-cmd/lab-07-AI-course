@@ -87,7 +87,7 @@ change α, half-life or ε. Everything is reproducible by running the notebook t
 
 **Recommendation:** for a manager who **knows the demand distribution and the costs** (so can write down
 `P` and `R`), use **value iteration**: it is exact (regret 0.0 on both shops), costs no days of
-experience, and runs in 0.01–0.02 s in Colab (against about 4.1 s per Q-learning run). It beat the sweep by 352.1 tenge at K = 100 and Q-learning by 81.8
+experience, and runs in about 0.02 s in Colab (against 4.1–4.2 s per Q-learning run). It beat the sweep by 352.1 tenge at K = 100 and Q-learning by 81.8
 on average (up to 296.0 on the worst seed), while using zero days against their 33,000 and 100,000.
 
 For a manager who **does not know the model and has only days**: with no delivery fee, the order-up-to
