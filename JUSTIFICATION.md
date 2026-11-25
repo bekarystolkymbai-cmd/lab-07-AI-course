@@ -118,8 +118,29 @@ when you know the model" survives when the model has to be learned, which temper
 
 ## 6. AI-use declaration
 
-I used Claude (Anthropic) for this assignment. It wrote the three notebook functions
-(`bellman_backup`, `epsilon_greedy`, `q_update`), chose the fee K = 100, ran the notebook in Google Colab (my account), and drafted
-`DECOMPOSITION.md` and this `JUSTIFICATION.md` from the numbers the notebook printed; it also made the
-commits to this fork. All numbers above are copied from the notebook
-output and `results.json`, not from the AI's own statements.
+I used Claude (Anthropic), an AI assistant in the Claude desktop app, for most of this assignment.
+
+* It wrote the code of the three ✏️ functions (`bellman_backup`, `epsilon_greedy`, `q_update`) and chose the
+  fee `FIXED_COST = 100`. Everything else in the notebook (the shop, the harness, the checks) is the supplied
+  code, unchanged.
+* It first solved and ran the notebook in its own sandbox (numpy only), before `DECOMPOSITION.md` was
+  committed. So the decomposition was written by the assistant after it had already worked through the
+  code; it was not written by me before any code, as the README intends.
+* It then ran the notebook in Google Colab (standard CPU runtime) through the app's built-in browser, in my
+  Google account, which I had signed in to myself; I also authorised Colab's access to GitHub myself. All
+  outputs in the notebook and in `results.json` come from the final "Restart session and run all" in that
+  Colab session. The numbers are the same as in the sandbox run; only the timings differ. No number was
+  typed by hand.
+* It wrote `DECOMPOSITION.md` and this `JUSTIFICATION.md` from my run's numbers, and committed all files to
+  my fork, through Colab's "Save to GitHub" and the GitHub web editor.
+* Why the history looks the way it does: the notebook was committed part by part from Colab (2a, 2b, 3,
+  4a–4b, 5). The save after Part 4c did not go through, and the saves lost the outputs of Parts 3–4b, so the
+  whole notebook was re-run from top to bottom and committed again (execution counts 1–13). `results.json`
+  and this file were then updated to that final run's timings. No commit was back-dated.
+* To bring `results.json` from the Colab session into the fork, the assistant added a temporary cell that
+  printed the file, ran it and deleted it before saving, then pasted the printed content into the GitHub
+  editor. It checked with SHA-256 that the committed file matches the one Colab wrote (GitHub only added a
+  final newline).
+* `Lab07-Beka.ipynb` is a copy of the same final notebook under the name I asked for; Colab saved it without
+  execution counts. The file to grade is `lab07_three_routes.ipynb`.
+* I asked for this help, signed in to Colab and GitHub myself, and I am responsible for what is submitted.
